@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Олег Акиншин](https://up.htmlacademy.ru/adaptive/17/user/826345).
-* Наставник: `Неизвестно`.
+- Студент: [Олег Акиншин](https://up.htmlacademy.ru/adaptive/17/user/826345)
+- Наставник: [Максим Прусаков](https://up.htmlacademy.ru/adaptive/17/user/83559)
 
 ---
 
