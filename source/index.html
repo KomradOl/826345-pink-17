@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Мобильное проложение "Пинк"</h1>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://placehold.it/80x25" alt="Pink" />
+      </a>
+      <button class="button-close button-close--active page-header__button-close">
+        <img class="button-close__image" src="http://placehold.it/30x25" alt="Close" />
+      </button>
+    </div>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list">
+        <li class="page-header__nav-item">
+          <a>Главная</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <header class="page-main__header">
+      <h2 class="visually-hidden">iPhone</h2>
+    </header>
+    <section class="application-market page-main__application-market ">
+      <h2 class="visually-hidden">Установка приложения</h2>
+      <a class="application-market__button" href="#">Скачать приложение</a>
+      <ul class="application-market__list">
+        <li class="application-market__item">
+          <a href="#">
+            <img src="http://placehold.it/70x50" alt="iTunes" />
+          </a>
+        </li>
+        <li class="application-market__item">
+          <a href="#">
+            <img src="http://placehold.it/70x50" alt="Play Market" />
+          </a>
+        </li>
+        <li class="application-market__item">
+          <a href="#">
+            <img src="http://placehold.it/70x50" alt="Microsoft Store" />
+          </a>
+        </li>
+      </ul>
+      <p class="application-market__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+    </section>
+    <section class="advantages page-main__advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="advantages__post">Устали от серости мегаполиса?</p>
+      <p class="advantages__post">Нам есть, что вам предложить!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__paragrapf">
+            Приложение позволит вам победить осеннюю хандру и депрессию
+            буквально в несколько кликов.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__paragrapf">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__paragrapf">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+            заводите новых.
+          </p>
+        </li>
+      </ul>
+      <img class="advantages__image" src="http://placehold.it/140x275" alt="iPhone" />
+    </section>
+  </main>
+</body>
+
 </html>
