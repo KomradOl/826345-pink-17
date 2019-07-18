@@ -1,9 +1,5 @@
-@import "application-market.less";
-@import "advantages.less";
-
 .page-main {
-  width: 320px;
-  margin: auto;
+  width: 100%;
 }
 
 .page-main__header {
@@ -15,7 +11,6 @@
 .page-main__title-photo {
   .fonts(300; 24px; auto);
   width: 280px;
-  margin: auto;
   text-align: center;
   color: #ffffff;
 }
@@ -33,7 +28,7 @@
 }
 
 .page-main__photo-list {
-  width: 320px;
+  width: 100%;
   background-color: #ffffff;
   list-style: none;
   margin: 0;
@@ -42,16 +37,18 @@
 
 .photo-list__item {
   width: 280px;
-  margin: 20px auto;
+  margin: 20px;
   background-color: #f2f2f2;
+
+  &--panorama {
+    margin-top: -10px;
+  }
 }
 
-.page-main__item-image--panorama {
-  width: 320px;
-}
-
-.photo-list__item--panorama {
-  margin-top: -10px;
+.page-main__item-image {
+  &--panorama {
+    width: 100%;
+  }
 }
 
 .photo-list__item-name,
@@ -65,8 +62,8 @@
   color: #283645;
 }
 
-.photo-list__item-text,
-.photo-list__item-quantity {
+.photo-list__item-quantity,
+.photo-list__item-text {
   .fonts(300; 12px; 24px);
   color: #d22856;
 }

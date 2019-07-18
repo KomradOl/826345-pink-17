@@ -1,28 +1,33 @@
-@import "blocks/header.less";
-@import "blocks/main.less";
-@import "blocks/footer.less";
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/page-footer.less";
+@import "blocks/application-market.less";
+@import "blocks/advantages.less";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
 
 .fonts(@font-weight; @font-size; @line-height) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: @font-weight;
   font-size: @font-size;
   line-height: @line-height;
 }
 
-body {
-  min-width: 320px;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-a {
+.link(@color) {
   text-decoration: none;
-  color: #ffffff;
+  color: @color;
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.page-body {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
 }
