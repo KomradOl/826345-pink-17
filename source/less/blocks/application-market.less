@@ -1,12 +1,27 @@
 .application-market {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 670px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 33%;
+}
+
+.application-market__title {
+  padding: 0 20px;
+  .fonts(300; 24px; 24px);
+  color: @bg-white;
+  text-align: center;
+}
+
+.application-market__wrapper {
+  padding: 0 20px;
   background-color: #1d2631;
-  padding: 25px;
 }
 
 .application-market__button {
   width: 280px;
   .fonts(400; 18px; 18px);
-  .link(#ffffff);
+  .link(@bg-white);
   text-transform: uppercase;
 }
 
@@ -15,10 +30,38 @@
 }
 
 .application-market__item {
-  .link(#ffffff);
+  .link(@bg-white);
 }
 
 .application-market__text {
+  width: 280px;
   .fonts(300; 14px; auto);
-  color: #ffffff;
+  color: @bg-white;
+}
+
+@media (min-width: @tablet-width) {
+  .application-market {
+
+    height: 625px;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom;
+  }
+
+  .application-market__wrapper {
+    width: 300px;
+    margin-top: 20px;
+    background-color: transparent;
+  }
+
+  .application-market__title {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-market {
+    height: 750px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 100% 100%;
+  }
 }

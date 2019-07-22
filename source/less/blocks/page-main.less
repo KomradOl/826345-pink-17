@@ -1,69 +1,242 @@
 .page-main {
-  width: 100%;
-}
-
-.page-main__header {
-  margin: 0;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-}
-
-.page-main__title-photo {
-  .fonts(300; 24px; auto);
-  width: 280px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.page-main__post {
-  background-color: #ffffff;
+  width: auto;
+  background-color: @bg-white;
 }
 
 .page-main__post-paragraph {
   width: 280px;
   .fonts(400; 14px; 30px);
-  color: #283645;
+  color: @bg-darkgrey;
   text-align: center;
   white-space: pre;
+  margin: 0 auto;
 }
 
-.page-main__photo-list {
-  width: 100%;
-  background-color: #ffffff;
+.page-main__item-panorama {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 320px;
+  height: 330px;
+  background: @bg-white url("../img/panorama-mobile@1x.jpg") no-repeat 100% 0;
+  margin: 0 auto;
+}
+
+.page-main__item-wrapper {
+  width: 280px;
+  background-color: @bg-lightgrey;
+  margin: 0 10px 20px 20px;
+}
+
+.page-main__item-name,
+.page-main__item-paragraph {
+  .fonts(400; 14px; 24px);
+  margin: 0 20px;
+  color: @bg-darkgrey;
+}
+
+.page-main__item-time {
+  .fonts(300; 12px; 24px);
+  color: @bg-darkgrey;
+}
+
+.page-main__item-quantity,
+.page-main__item-text {
+  .fonts(300; 12px; 24px);
+  color: @col-red;
+}
+
+.photo-list {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-white;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
 .photo-list__item {
   width: 280px;
-  margin: 20px;
-  background-color: #f2f2f2;
-
-  &--panorama {
-    margin-top: -10px;
-  }
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
-.page-main__item-image {
-  &--panorama {
-    width: 100%;
-  }
+.photo-list__item:nth-child(1) {
+  background: @bg-lightgrey url("../img/photo-car-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
+}
+
+.photo-list__item:nth-child(2) {
+  background: @bg-lightgrey url("../img/photo-drumset-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
+}
+
+.photo-list__item:nth-child(3) {
+  background: @bg-lightgrey url("../img/photo-window-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
+}
+
+.photo-list__item:nth-child(4) {
+  background: @bg-lightgrey url("../img/photo-fair-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
+}
+
+.photo-list__item:nth-child(5) {
+  background: @bg-lightgrey url("../img/photo-pov-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
+}
+
+.photo-list__item:nth-child(6) {
+  background: @bg-lightgrey url("../img/photo-wing-mobile@1x.jpg") no-repeat 100% 0;
+  margin-bottom: 20px;
 }
 
 .photo-list__item-name,
 .photo-list__item-paragraph {
   .fonts(400; 14px; 24px);
-  color: #283645;
+  color: @bg-darkgrey;
+  margin-left: 20px;
 }
 
 .photo-list__item-time {
   .fonts(300; 12px; 24px);
-  color: #283645;
+  color: @bg-darkgrey;
 }
 
 .photo-list__item-quantity,
 .photo-list__item-text {
   .fonts(300; 12px; 24px);
-  color: #d22856;
+  color: @col-red;
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__item-panorama {
+    width: 660px;
+    height: 630px;
+    background: @bg-white url("../img/panorama-tablet@1x.jpg") no-repeat 100% 0;
+    margin: 0 auto;
+  }
+
+  .page-main__item-wrapper {
+    width: 620px;
+  }
+
+  .photo-list {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: @bg-white;
+    list-style: none;
+    padding: 0;
+  }
+
+  .photo-list__item {
+    width: 300px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .photo-list__item:nth-child(1) {
+    background: @bg-lightgrey url("../img/photo-car-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(2) {
+    background: @bg-lightgrey url("../img/photo-drumset-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(3) {
+    background: @bg-lightgrey url("../img/photo-window-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(4) {
+    background: @bg-lightgrey url("../img/photo-fair-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(5) {
+    background: @bg-lightgrey url("../img/photo-pov-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(6) {
+    background: @bg-lightgrey url("../img/photo-wing-tablet@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__item-panorama {
+    width: 1200px;
+    height: 605px;
+    background: @bg-white url("../img/panorama-desktop@1x.jpg") no-repeat 100% 0;
+    margin: 0 auto;
+  }
+
+  .page-main__item-wrapper {
+    width: 940px;
+  }
+
+  .photo-list {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: @bg-white;
+    list-style: none;
+    padding: 0;
+  }
+
+  .photo-list__item {
+    width: 300px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .photo-list__item:nth-child(1) {
+    background: @bg-lightgrey url("../img/photo-car-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(2) {
+    background: @bg-lightgrey url("../img/photo-drumset-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .photo-list__item:nth-child(3) {
+    background: @bg-lightgrey url("../img/photo-window-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .photo-list__item:nth-child(4) {
+    background: @bg-lightgrey url("../img/photo-fair-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__item:nth-child(5) {
+    background: @bg-lightgrey url("../img/photo-pov-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .photo-list__item:nth-child(6) {
+    background: @bg-lightgrey url("../img/photo-wing-desktop@1x.jpg") no-repeat 100% 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
 }

@@ -1,18 +1,30 @@
 .page-header {
-  width: 100%;
-  background-color: #283645;
-  color: #ffffff;
+  background: @bg-darkgrey url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
+  background-size: 990px 660px;
 }
 
 .page-header__logo {
-  .link(#ffffff);
+  .link(@bg-white);
 }
 
 .page-header__wrapper {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-darkgrey;
+}
+
+.page-header__header-wrapper {
+  margin-top: 5px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @bg-darkgrey;
 }
 
 .page-header__nav-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,10 +32,91 @@
 
 .page-header__nav-item {
   .fonts(bold; 18px; 32px);
+  background-color: @bg-darkgrey;
+  border: 1px solid @col-black;
   text-transform: uppercase;
   text-align: center;
 }
 
 .page-header__link {
-  .link(#ffffff);
+  .link(@bg-white);
+}
+
+.page-header__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .fonts(300; 24px; auto);
+  width: 280px;
+  margin: auto;
+  text-align: center;
+  color: @bg-white;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background: @bg-darkgrey url("../img/bg-back-tablet@1x.jpg") no-repeat 0 0;
+    background-size: 1200px 980px;
+  }
+
+  .page-header__header-wrapper {
+    height: 110px;
+  }
+
+  .page-header__title {
+    .fonts(300; 50px; 42px);
+    width: 620px;
+    height: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background: @bg-darkgrey url("../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 1200px 1050px;
+  }
+
+  .page-header__wrapper {
+    width: auto;
+    height: 110px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgba(27, 36, 45, 0.7);
+  }
+
+  .page-header__logo {
+    background-color: rgba(27, 36, 45, 0.7);
+  }
+
+  .page-header__nav-list {
+    width: 680px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .page-header__nav-item {
+    border: none;
+    background-color: rgba(27, 36, 45, 0.7);
+  }
+
+  .page-header__button-close {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .page-header__title {
+    width: 820px;
+    height: 290px;
+  }
 }
