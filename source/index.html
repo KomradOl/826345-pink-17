@@ -6,15 +6,14 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__header-wrapper">
-        <a class="page-header__logo" href="#">
+      <div class="button-list page-header__button-list">
+        <a class="button-list__logo" href="#">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
               <path fill="#FFFFFF"
@@ -27,7 +26,7 @@
             </g>
           </svg>
         </a>
-        <button class="button-close button-close--active page-header__button-close">
+        <button class="button-close button-close--active button-list__button-close">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF"
               d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
@@ -51,11 +50,15 @@
         </ul>
       </nav>
     </div>
-
-    <section class="application-market page-header__application-market ">
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Мобильное проложение "Пинк" главная</h1>
+    <section class="application-market page-main__application-market ">
       <h2 class="visually-hidden">Установка приложения</h2>
-      <span class="application-market__title">Взгляните на жизнь иначе!</span>
       <div class="application-market__wrapper">
+        <p class="application-market__title">
+          Взгляните на жизнь иначе!
+        </p>
         <a class="application-market__button" href="#">Скачать приложение</a>
         <ul class="application-market__list">
           <li class="application-market__item">
@@ -94,15 +97,10 @@
         <p class="application-market__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Мобильное проложение "Пинк" главная</h1>
     <section class="advantages page-main__advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="advantages__vrapper">
-        <p class="advantages__post">Устали от серости мегаполиса?</p>
-        <p class="advantages__post">Нам есть, что вам предложить!</p>
-      </div>
+      <p class="advantages__post">Устали от серости мегаполиса?</p>
+      <p class="advantages__post">Нам есть, что вам предложить!</p>
       <ul class="advantages__list">
         <li class="advantages__item">
           <div class="advantages__item-wrapper">
@@ -133,23 +131,21 @@
         </li>
       </ul>
       <span class="advantages__research">
-        <div class="advantages__research-wrapper">
-          <h3 class="advantages__research-title">Эффект на 24часа!</h3>
-          <p class="advantages__research-post">
-            Британские ученые провели исследования
-            и доказали, что положительный эффект
-            от использования приложения длится
-            целые сутки!
-          </p>
-          <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
-        </div>
+        <h3 class="advantages__research-title">Эффект на 24часа!</h3>
+        <p class="advantages__research-post">
+          Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится
+          целые сутки!
+        </p>
+        <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
       </span>
     </section>
     <section class="reviews page-main__reviews">
       <h2 class="visually-hidden">О нас</h2>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--hidden">
     <div class="page-footer__logo">
       <a href="#">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
