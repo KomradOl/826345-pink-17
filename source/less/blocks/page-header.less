@@ -1,19 +1,6 @@
-.button-list__logo {
-  .link(@bg-white);
-}
-
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: @bg-darkgrey;
-}
-
-.button-list {
-  margin-top: 5px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: @bg-darkgrey;
 }
 
@@ -37,18 +24,7 @@
   .link(@bg-white);
 }
 
-@media (min-width: @tablet-width) {
-  .button-list {
-    height: 110px;
-  }
-}
-
 @media (min-width: @desktop-width) {
-  .page-header {
-    background: @bg-darkgrey url("../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
   .page-header__wrapper {
     width: auto;
     height: 110px;
@@ -56,10 +32,6 @@
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
-    background-color: rgba(27, 36, 45, 0.7);
-  }
-
-  .button-list__logo {
     background-color: rgba(27, 36, 45, 0.7);
   }
 
@@ -73,9 +45,5 @@
   .page-header__nav-item {
     border: none;
     background-color: rgba(27, 36, 45, 0.7);
-  }
-
-  .button-list__button-close {
-    display: none;
   }
 }

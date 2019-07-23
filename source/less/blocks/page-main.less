@@ -1,7 +1,6 @@
 .page-main {
   width: auto;
-  background: @bg-darkgrey url("../img/bg-back-mobile@1x.jpg") no-repeat 100% 100%;
-  background-size: cover;
+  margin: 0;
 }
 
 .page-main__post-paragraph {
@@ -26,116 +25,14 @@
   color: @bg-white;
 }
 
-.photo-list {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: @bg-white;
-  list-style: none;
-  margin-top: -20px;
-  padding: 0;
-}
-
-.photo-list__item {
-  width: 280px;
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px auto;
-  background-color: @bg-lightgrey;
-
-  &--panorama img {
-    margin-left: -20px;
-  }
-}
-
-.photo-list__item-name,
-.photo-list__item-paragraph {
-  .fonts(400; 14px; 24px);
-  color: @bg-darkgrey;
-  margin-left: 20px;
-}
-
-.photo-list__item-time {
-  .fonts(300; 12px; 24px);
-  color: @bg-darkgrey;
-}
-
-.photo-list__item-quantity,
-.photo-list__item-text {
-  .fonts(300; 12px; 24px);
-  color: @col-red;
-  margin-left: 20px;
-}
-
 @media (min-width: @tablet-width) {
-  .page-main {
-    background: @bg-darkgrey url("../img/bg-back-tablet@1x.jpg") no-repeat 100% 100%;
-    background-size: cover;
-  }
-
   .page-main__title {
-    .fonts(300; 50px; 42px);
+    font-size: 50px;
     width: 620px;
     height: 200px;
   }
 
   .page-main__post-paragraph {
-    .fonts(400; 18px; 30px);
-  }
-
-  .photo-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: @bg-white;
-    list-style: none;
-  }
-
-  .photo-list__item {
-    width: 300px;
-    height: 460px;
-
-    &--panorama {
-      width: 580px;
-      padding: 0 20px;
-      margin: 20px;
-    }
-
-    &--panorama img {
-      width: 660px;
-      height: 509px;
-      margin-left: -40px;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-main {
-    background: @bg-darkgrey url("../img/bg-back-desktop@1x.jpg") no-repeat 100% 100%;
-    background-size: cover;
-  }
-
-  .page-main__title {
-    .fonts(300; 50px; 42px);
-    width: 620px;
-    height: 200px;
-  }
-
-  .photo-list {
-    padding: 40px 120px;
-  }
-
-  .photo-list__item {
-    &--panorama {
-      width: 900px;
-      margin: 0 auto;
-    }
-
-    &--panorama img {
-      width: 1200px;
-      height: 506px;
-      margin-left: -150px;
-    }
+    font-size: 18px;
   }
 }
