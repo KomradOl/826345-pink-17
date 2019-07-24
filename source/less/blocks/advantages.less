@@ -11,12 +11,12 @@
 }
 
 .advantages__list {
-  height: 785px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
   padding: 0 20px;
+  padding-bottom: 310px;
   background: @bg-lightgrey url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
 }
 
@@ -48,8 +48,8 @@
 
   .advantages__list {
     width: 620px;
-    height: 520px;
     align-items: flex-end;
+    padding-bottom: 40px;
     background: @bg-lightgrey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 0;
   }
 
@@ -59,22 +59,26 @@
 
   .advantages__research {
     display: flex;
-    flex-direction: column;
-    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: auto;
-    padding-top: 60px;
-    padding-left: 330px;
-    padding-right: 20px;
-    background: @bg-white url("../img/icon-timer.svg") no-repeat 2% 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__research-image {
+    margin: 0 10px;
   }
 
   .advantages__research-title {
+    display: flex;
     .fonts(700; 30px; 36px);
     color: @col-black;
-    width: 175px;
+    width: 200px;
   }
 
   .advantages__research-post {
+    display: flex;
     .fonts(400; 14px; 24px);
     color: @bg-darkgrey;
     width: 300px;
@@ -109,8 +113,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     width: 245px;
-    height: 550px;
+    padding-top: 350px;
     margin: 0;
 
     &:nth-child(1) {
@@ -126,9 +131,8 @@
     }
   }
 
-  .advantages__item-wrapper {
-    width: 245px;
-    height: 220px;
+  .advantages__research-image {
+    margin: 30px 120px;
   }
 
   .advantages__research {
