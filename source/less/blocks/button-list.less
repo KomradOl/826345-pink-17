@@ -1,0 +1,23 @@
+.button-list__logo {
+  .link(@bg-white);
+}
+
+.button-list {
+  margin-top: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @bg-darkgrey;
+}
+
+
+@media (min-width: @desktop-width) {
+  .button-list__logo {
+    background-color: rgba(27, 36, 45, 0.7);
+  }
+
+  .button-list__button-close {
+    display: none;
+  }
+}
