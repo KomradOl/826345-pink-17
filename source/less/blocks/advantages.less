@@ -1,27 +1,40 @@
 .advantages {
-  background-color: @bg-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: @col-black;
+}
+
+.advantages__inner {
+  .inner(320px; 20px);
 }
 
 .advantages__post {
   display: flex;
-  width: 250px;
+  flex-direction: column;
   .fonts(300; 24px; normal);
   text-align: center;
+  background-color: @bg-white;
+  padding: 45px 0;
+}
+
+.advantages__post-item {
+  .inner(280px; 0);
 }
 
 .advantages__list {
+  min-height: 380px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  padding: 0 20px 310px;
-  background: @bg-lightgrey url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
+  margin-top: 0;
+  padding: 85px 0 300px;
+  background: @bg-lightgrey url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 107%;
 }
 
 .advantages__item {
-  width: 280px;
-  margin: 0 auto;
+  .inner(280px; 0);
 }
 
 .advantages__title {
@@ -39,30 +52,54 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    color: @col-black;
+    margin-top: -20px;
+    margin-left: 0;
+  }
+
+  .advantages__inner {
+    .inner(660px; 20px);
+  }
+
   .advantages__post {
     font-size: 40px;
-    width: 550px;
-    margin: 20px auto;
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .advantages__post-item {
+    .inner(620px; 20px);
+
+    &:nth-child(2) {
+      width: 325px;
+    }
   }
 
   .advantages__list {
-    width: 620px;
     align-items: flex-end;
-    padding-bottom: 40px;
-    background: @bg-lightgrey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 0;
+    padding: 20px 0;
+    background: @bg-lightgrey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 100%;
   }
 
   .advantages__item {
-    margin-left: 310px;
+    .inner(620px; 20px);
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 310px;
+      margin-left: 275px;
+    }
   }
 
   .advantages__research {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
-    margin: 0;
-    padding: 0;
+    background-color: @bg-white;
+    margin-top: -15px;
+    padding: 20px 0;
   }
 
   .advantages__research-image {
@@ -84,28 +121,45 @@
   }
 
   .advantages__research-link {
-    color: #d22856;
+    color: @col-red;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .advantages__inner {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
   .advantages__post {
     font-size: 50px;
-    width: 810px;
-    margin: 35px auto;
+    width: auto;
+  }
 
-    &:nth-child(3) {
-      width: 420px;
-      margin-top: 20px;
+  .advantages__post-item {
+    &:nth-child(1) {
+      width: 768px;
+    }
+
+    &:nth-child(2) {
+      width: 460px;
     }
   }
 
-  .advantages__list {
+  .advantages__wrapper {
     width: auto;
+    background-color: @bg-lightgrey;
+  }
+
+  .advantages__list {
+
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    .inner(890px; 0);
     background-image: none;
-    background-color: @bg-lightgrey;
   }
 
   .advantages__item {
@@ -113,29 +167,53 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 245px;
-    padding-top: 350px;
-    margin: 0;
+    padding-top: 340px;
 
     &:nth-child(1) {
       background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat 50% 0;
+      margin: 0;
     }
 
     &:nth-child(2) {
       background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat 50% 0;
+      margin: 0;
     }
 
     &:nth-child(3) {
       background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat 50% 0;
+      margin: 0;
     }
   }
 
-  .advantages__research-image {
-    margin: 30px 120px;
+  .advantages__title {
+    width: 185px;
+  }
+
+  .advantages__paragraph {
+    width: 215px;
+    text-align: center;
   }
 
   .advantages__research {
+    .inner(940px; 10px);
     margin-top: -20px;
     background-color: @bg-lightgrey;
+  }
+
+  .advantages__research-image {
+    margin: 30px 20px;
+  }
+
+  .advantages__research-text {
+    margin-left: 35px;
+    margin-top: 100px;
+  }
+
+  .advantages__research-title {
+    width: 311px;
+  }
+
+  .advantages__research-post {
+    width: 560px;
   }
 }
