@@ -5,8 +5,9 @@
   color: @col-black;
 }
 
-.advantages__inner {
-  .inner(320px; 20px);
+.advantages__list-wrapper {
+  background: @bg-lightgrey url("../img/bg-triangle-white.svg") no-repeat 100% 0;
+  background-size: cover;
 }
 
 .advantages__post {
@@ -16,6 +17,7 @@
   text-align: center;
   background-color: @bg-white;
   padding: 45px 0;
+  width: auto;
 }
 
 .advantages__post-item {
@@ -23,6 +25,7 @@
 }
 
 .advantages__list {
+  .inner(280px; 0);
   min-height: 380px;
   display: flex;
   flex-direction: column;
@@ -30,7 +33,7 @@
   list-style: none;
   margin-top: 0;
   padding: 85px 0 300px;
-  background: @bg-lightgrey url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 107%;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 107%;
 }
 
 .advantages__item {
@@ -58,10 +61,6 @@
     margin-left: 0;
   }
 
-  .advantages__inner {
-    .inner(660px; 20px);
-  }
-
   .advantages__post {
     font-size: 40px;
     padding-top: 65px;
@@ -77,29 +76,33 @@
   }
 
   .advantages__list {
+    .inner(620px; 20px);
     align-items: flex-end;
-    padding: 20px 0;
-    background: @bg-lightgrey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 100%;
+    padding: 20px 20px;
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 100%;
+    z-index: 2;
   }
 
   .advantages__item {
     .inner(620px; 20px);
 
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
+    &:nth-child(n) {
       width: 310px;
       margin-left: 275px;
     }
   }
 
+  .advantages__research-wrapper {
+    background-color: @bg-white;
+  }
+
   .advantages__research {
+    .inner(620px; 20px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: @bg-white;
-    margin-top: -15px;
-    padding: 20px 0;
+    padding: 20px 20px;
   }
 
   .advantages__research-image {
@@ -126,15 +129,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantages__inner {
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
   .advantages__post {
     font-size: 50px;
-    width: auto;
   }
 
   .advantages__post-item {
@@ -147,8 +143,7 @@
     }
   }
 
-  .advantages__wrapper {
-    width: auto;
+  .advantages__research-wrapper {
     background-color: @bg-lightgrey;
   }
 

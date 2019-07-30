@@ -1,16 +1,15 @@
 .application-market {
-  width: auto;
-  background: @bg-darkgrey url("../img/bg-back-mobile@1x.jpg") no-repeat center -9px;
+  background: transparent url("../img/bg-back-mobile@1x.jpg") no-repeat top;
 }
 
 .application-market__inner {
-  .inner(320px; 20px);
-  min-height: 668px;
+  .inner(280px; 20px);
+  min-height: 768px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat 20% 19%;
+  background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat 0 37%;
 }
 
 .application-market__title {
@@ -21,10 +20,11 @@
 }
 
 .application-market__box {
+  .inner(320px; 0);
   display: flex;
   flex-direction: column;
   align-items: center;
-  .inner(320px; 0);
+  margin-left: -20px;
   padding: 30px 0;
   background-color: #1d2631;
 }
