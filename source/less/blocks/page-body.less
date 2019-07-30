@@ -1,43 +1,12 @@
 .page-body {
   min-width: 320px;
-  margin: 0 auto;
-  color: #000000;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  background: @bg-darkgrey url("../../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
-  background-size: cover;
-}
+  color: #000000;
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@media (min-width: @tablet-width) {
-  .page-body {
-    width: 660px;
-    background: @bg-darkgrey url("../../img/bg-back-tablet@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-body {
-    width: 1200px;
-    background: @bg-darkgrey url("../../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
+  background-color: @bg-darkgrey;
 }
