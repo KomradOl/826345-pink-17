@@ -23,6 +23,10 @@
 .page-footer__logo-image {
   fill: @bg-darkgrey;
 
+  &--isdesktop {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     fill: @col-red;
@@ -105,5 +109,15 @@
     width: 940px;
     margin: 0 auto;
     padding: 75px 130px;
+  }
+
+  .page-footer__logo-image {
+    &--ismobile {
+      display: none;
+    }
+
+    &--isdesktop {
+      display: inline;
+    }
   }
 }

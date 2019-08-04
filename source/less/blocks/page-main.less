@@ -6,16 +6,23 @@
 
 .page-main__post-paragraph {
   background-color: @bg-white;
-  .inner(260px; 0);
+  .inner(250px; 0);
   .fonts(400; 14px; 30px);
   color: @bg-darkgrey;
-  padding: 60px 30px;
+  padding: 45px 30px;
   text-align: center;
 }
 
 .page-main__inner {
-  margin-top: 100px;
+  min-height: 100px;
   background: @bg-darkgrey url("../img/bg-back-mobile@1x.jpg") no-repeat center -9px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-main__inner {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px 462px;
+  }
 }
 
 .page-main__vrapper {
@@ -29,28 +36,44 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  .fonts(300; 24px; normal);
+  .fonts(300; 24px; 30px);
   width: 280px;
-  margin: 20px auto;
+  margin: 128px auto 50px;
   text-align: center;
   color: @bg-white;
 }
 
 @media (min-width: @tablet-width) {
   .page-main__inner {
-    background: @bg-darkgrey url("../img/bg-back-tablet@1x.jpg") no-repeat center -9px;
+    background: @bg-darkgrey url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 100%;
+    padding-bottom: 32px;
   }
 
-  .page-main__title,
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__inner {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 729px;
+    }
+  }
+
   .page-main__title-photo {
-    font-size: 50px;
+    margin-top: 87px;
+    .fonts(300; 50px; 58px);
     width: 620px;
+    padding: 85px 0 60px 0;
+  }
+
+  .page-main__title {
+    margin-top: 87px;
+    .fonts(300; 50px; 58px);
+    width: 620px;
+    padding: 85px 0 0 0;
   }
 
   .page-main__post-paragraph {
     .inner(440px; 0);
     font-size: 18px;
-    padding: 100px 110px 85px;
+    padding: 90px 110px 78px;
   }
 }
 
@@ -65,19 +88,34 @@
     background: @bg-darkgrey url("../img/bg-back-desktop@1x.jpg") no-repeat center -9px;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__inner {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+    }
+  }
+
+  .page-main__vrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -7px;
+  }
+
   .page-main__title {
     .inner(820px; 0);
-    margin-top: 60px;
+    margin: 60px 239px 0 321px;
   }
 
   .page-main__title-photo {
-    .inner(350px; 0);
-    margin-top: 60px;
+    width: 350px;
+    margin-top: 80px;
+    margin-left: 581px;
   }
 
   .page-main__post-paragraph {
     .inner(624px; 0);
     font-size: 18px;
-    padding: 100px 312px 90px;
+    padding: 91px 0 91px 90px;
   }
 }
