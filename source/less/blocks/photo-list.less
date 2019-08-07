@@ -2,23 +2,24 @@
   .inner(280px; 20px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   background-color: @bg-white;
   color: @bg-darkgrey;
   list-style: none;
-  margin-top: -15px;
 }
 
 .photo-list__item {
   .inner(280px; 0);
   display: flex;
   flex-direction: column;
-  min-height: 280px;
-  margin: 20px auto 5px;
+  justify-content: space-between;
+  min-height: 300px;
+  margin: 1px auto 20px;
+
   background-color: @bg-lightgrey;
 
   &--panorama {
-    padding-bottom: 16px;
+    padding-bottom: 18px;
 
     .photo-list__image {
       position: absolute;
@@ -63,11 +64,11 @@
 
     .photo-list__item-like {
       width: 129px;
-      margin: 11px 5px 0 16px;
+      margin: 12px 5px 0 14px;
     }
 
     .photo-list__item-text {
-      margin-left: 17px;
+      margin-left: 18px;
     }
   }
 }
@@ -79,7 +80,7 @@
 
 .photo-list__item-name {
   .fonts(700; 14px; 24px);
-  margin-top: 9px;
+  margin-top: 11px;
   margin-left: 18px;
 }
 
@@ -101,7 +102,7 @@
 .photo-list__item-like {
   width: 140px;
   margin-top: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: 18px;
   .fonts(400; 12px; 24px);
   color: @col-red;
@@ -128,7 +129,7 @@
     width: 300px;
     justify-content: space-between;
     min-height: 455px;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 20px;
 
     &:nth-child(even) {
@@ -148,15 +149,15 @@
       }
 
       .photo-list__item-name {
-        margin: 483px 5px 0 30px;
+        margin: 476px 0 0 30px;
 
         &::after {
-          top: -475px;
+          top: -478px;
           left: 450px;
         }
 
         &::before {
-          top: -470px;
+          top: -473px;
           left: 470px;
         }
       }
@@ -167,14 +168,14 @@
         justify-content: space-between;
         align-items: baseline;
         width: 140px;
-        margin-top: -74px;
+        margin-top: -80px;
         margin-left: 455px;
         order: 2;
       }
 
       .photo-list__item-paragraph {
         width: 522px;
-        margin: -55px 0 27px 30px;
+        margin: -57px 0 27px 30px;
         order: 3;
       }
     }
@@ -188,7 +189,7 @@
   .photo-list__item-name {
     display: flex;
     align-items: baseline;
-    margin: 15px 5px auto 30px;
+    margin: 16px 5px 3px 28px;
   }
 
   .photo-list__item-paragraph {
@@ -196,7 +197,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
-    margin: -15px 0 auto 30px;
+    margin: -3px 0 auto 30px;
   }
 
   .photo-list__item-like {
@@ -205,7 +206,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-left: 10px;
   }
 }
