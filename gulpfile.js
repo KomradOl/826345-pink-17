@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var del = require("del");
 var posthtml = require("posthtml-include");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("clean", function () {
   return del("build");
@@ -42,6 +43,10 @@ gulp.task("copy", function () {
 })
 .pipe(gulp.dest("build"));
 });
+
+gulp.task("images", function () {
+  return gulp.src("source/ img/**/*.{png, jpg}")
+    .pipe(imagin)
 
 gulp.task("server", function () {
   server.init({
