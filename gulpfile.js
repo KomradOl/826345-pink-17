@@ -44,9 +44,6 @@ gulp.task("copy", function () {
 .pipe(gulp.dest("build"));
 });
 
-gulp.task("images", function () {
-  return gulp.src("source/ img/**/*.{png, jpg}")
-    .pipe(imagin)
 
 gulp.task("server", function () {
   server.init({
