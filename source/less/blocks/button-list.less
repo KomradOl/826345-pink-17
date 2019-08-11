@@ -5,8 +5,17 @@
 .button-list__logo-image {
   fill: @bg-white;
 
-  &:hover,
-  &:focus {
+  &--ismobile {
+    display: inline;
+  }
+
+  &--isdesktop,
+  &--istablet {
+    display: none;
+  }
+
+  &:focus,
+  &:hover {
     fill: @col-red;
   }
 
@@ -17,33 +26,47 @@
 
 .button-list {
   width: 280px;
-  margin-top: 5px;
-  padding: 24px 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(40, 54, 69, 0.3);
-  border-bottom: 2px solid @col-black;
-  z-index: 6;
+  border-bottom: 1px solid @col-black;
+  background-color: transparent;
+
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+  }
 }
 
-.button-list__button-close,
-.button-list__button-open {
-  background-color: @bg-darkgrey;
+.button-list__toggle--nojs {
+  display: none;
+}
+
+.button-list__toggle {
+  padding: 0;
+  margin-top: -3px;
+  background-color: rgba(40, 54, 69, 0.3);
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-list__toggle-close,
+.button-list__toggle-open {
   fill: @bg-white;
 
   &--opened {
     display: block;
+    background-color: rgba(40, 54, 69, 0.3);
   }
 
-  &--closed,
-  &--nojs {
+  &--closed {
     display: none;
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     fill: @col-red;
   }
 
@@ -53,19 +76,46 @@
 }
 
 @media (min-width: @tablet-width) {
+  .button-list__logo-image {
+    &--ismobile {
+      display: none;
+    }
+
+    &--istablet {
+      display: inline;
+    }
+  }
+
   .button-list {
     width: 620px;
+    padding: 27px 20px 35px;
+  }
+
+  .button-list__toggle {
+    padding-top: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .button-list {
-    width: 220px;
-    border: none;
+  .button-list__logo-image {
+    &--istablet {
+      display: none;
+    }
+
+    &--isdesktop {
+      display: inline;
+    }
   }
 
-  .button-list__button-close,
-  .button-list__button-open {
+  .button-list {
+    width: 150px;
+    margin-top: 16px;
+    margin-left: -16px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .button-list__toggle {
     display: none;
   }
 }
