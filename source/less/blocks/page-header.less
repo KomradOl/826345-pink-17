@@ -1,5 +1,6 @@
 .page-header {
-  background-color: @bg-darkgrey;
+  position: relative;
+  background-color: transparent;
   margin-top: 0;
 }
 
@@ -51,10 +52,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    margin-top: 17px;
-  }
-
   .page-header__inner {
     .inner(660px; 0);
   }
@@ -81,10 +78,8 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: 0;
-    margin-left: -117px;
+    margin-top: -15px;
     z-index: 2;
   }
 
@@ -93,15 +88,15 @@
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
-    .inner(1180px; 10px);
+    .inner(960px; 10px);
     background-color: transparent;
   }
 
   .page-header__nav-list {
     display: flex;
     width: 700px;
-    margin-top: 5px;
-    margin-left: -102px;
+    margin-top: 11px;
+    margin-left: 100px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;

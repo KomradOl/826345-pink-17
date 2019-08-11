@@ -30,9 +30,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   border-bottom: 1px solid @col-black;
-  z-index: 2;
+  background-color: transparent;
+
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+  }
 }
 
 .button-list__toggle--nojs {
@@ -54,6 +58,7 @@
 
   &--opened {
     display: block;
+    background-color: rgba(40, 54, 69, 0.3);
   }
 
   &--closed {
@@ -83,7 +88,7 @@
 
   .button-list {
     width: 620px;
-    padding: 10px 20px 35px;
+    padding: 27px 20px 35px;
   }
 
   .button-list__toggle {
@@ -105,9 +110,9 @@
   .button-list {
     width: 150px;
     margin-top: 16px;
-    margin-left: -2px;
+    margin-left: -16px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 
   .button-list__toggle {
