@@ -47,6 +47,22 @@
   color: @bg-white;
 }
 
+.page-main__post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .inner(280px; 0);
+  .fonts(400; 14px; 30px);
+  color: @bg-darkgrey;
+  text-align: center;
+  padding: 33px 0;
+}
+
+.page-main__post-items {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-main__inner {
     background: @bg-darkgrey url("../img/bg-back-tablet@1x.jpg") no-repeat center 4%;
@@ -82,6 +98,21 @@
     font-size: 18px;
     line-height: 31px;
     padding: 94px 110px 78px;
+  }
+
+  .page-main__post {
+    .inner(490px; 65px);
+    font-size: 18px;
+    color: @bg-darkgrey;
+    text-align: center;
+    padding: 73px 0 0;
+  }
+
+  .page-main__post-items {
+    display: flex;
+    .fonts(400; 18px; 30px);
+    color: @bg-darkgrey;
+    padding: 1px 0 80px 81px;
   }
 }
 
@@ -134,5 +165,29 @@
     .inner(624px; 0);
     font-size: 18px;
     padding: 91px 0 91px 90px;
+  }
+
+  .page-main__post {
+    width: 760px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 73px 0 0 40px;
+  }
+
+  .page-main__post-item {
+    width: 780px;
+
+    &:first-child {
+      justify-content: flex-start;
+      text-align: center;
+      margin-right: 60px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      text-align: right;
+    }
   }
 }
