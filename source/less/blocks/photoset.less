@@ -1,7 +1,385 @@
+.photoset {
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-lightgrey;
+}
+
+.photoset__form {
+  .inner(280px; 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.photoset__photo {
+  width: 280px;
+  height: 374px;
+}
+
+.photoset__icons {
+  .inner(208px; 0);
+  padding: 33px 20px 0 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: @bg-lightgrey;
+  fill: #b5b9be;
+  cursor: pointer;
+}
+
+.photoset__contrast {
+  margin-top: 7px;
+  padding-right: 7px;
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: @col-red;
+  }
+}
+
+.photoset__crop {
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: @col-red;
+  }
+}
+
+.photoset__fill {
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: @col-red;
+  }
+}
+
+.photopset__list {
+  list-style: none;
+  .inner(240px; 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.photopset__item {
+  width: 240px;
+}
+
+.photoset__crop-input {
+  -webkit-appearance: none;
+  width: 240px;
+  cursor: pointer;
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background-color: @col-black;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: @bg-lightgrey;
+    border: 2px solid @col-red;
+    border-radius: 15px;
+    margin-top: -5px;
+  }
+
+  &:active::-webkit-slider-thumb {
+    background-color: @col-red;
+  }
+}
+
+.photoset__fill-input {
+  display: none;
+  -webkit-appearance: none;
+  width: 240px;
+  cursor: pointer;
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background-color: @col-black;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: @bg-lightgrey;
+    border: 2px solid @col-red;
+    border-radius: 15px;
+    margin-top: -5px;
+  }
+
+  &:active::-webkit-slider-thumb {
+    background-color: @col-red;
+  }
+}
+
+.photoset__contrast-input {
+  display: none;
+  -webkit-appearance: none;
+  width: 240px;
+  cursor: pointer;
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background-color: @col-black;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: @bg-lightgrey;
+    border: 2px solid @col-red;
+    border-radius: 15px;
+    margin-top: -5px;
+  }
+
+  &:active::-webkit-slider-thumb {
+    background-color: @col-red;
+  }
+}
+
+.photoset__button-wrapper {
+  .inner(280px; 0);
+  display: flex;
+  flex-direction: column;
+  padding: 66px 0  40px;
+}
+
+.photoset__button-post {
+  .fonts(700; 18px; 18px);
+  color: @col-red;
+  border: 2px solid @col-red;
+  padding: 17px 0;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @col-red;
+    color: @bg-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.photoset__button-cancelation {
+  .fonts(700; 18px; 18px);
+  color: #e7e8e8;
+  border: 2px solid #dddfe0;
+  padding: 17px 0;
+  border-radius: 30px;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: #cdd0d3;
+  }
+}
+
 @media (min-width: @tablet-width) {
-  width: auto;
+  .photoset {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photoset__form {
+    .inner(620px; 0);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 55px;
+  }
+
+  .photoset__photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photoset__icons {
+    width: 40px;
+    padding: 9px 0 60px 37px;
+    flex-direction: column;
+    justify-content: space-between;
+    fill: @col-red;
+  }
+
+  .photoset__contrast {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    padding: 0 0 0 6px;
+    fill: @col-red;
+
+    &:hover {
+      fill: @col-red;
+    }
+  }
+
+  .photoset__crop {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 49px;
+
+    &:hover {
+      fill: @col-red;
+    }
+  }
+
+  .photoset__fill {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 48px;
+
+    &:hover {
+      fill: @col-red;
+    }
+  }
+
+  .photopset__list {
+    width: 205px;
+    padding: 4px 6px 0 0;
+  }
+
+  .photopset__item {
+    width: 205px;
+  }
+
+  .photoset__crop-input {
+    width: 205px;
+    margin-bottom: 72px;
+  }
+
+  .photoset__fill-input {
+    display: block;
+    width: 205px;
+    margin-bottom: 70px;
+  }
+
+  .photoset__contrast-input {
+    display: block;
+    width: 205px;
+  }
+
+  .photoset__button-wrapper {
+    width: 260px;
+    padding: 6px 0  4px;
+    margin: -146px 0 80px 346px;
+  }
+
+  .photoset__button-post {
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  width: auto;
+  .photoset__form {
+    .inner(960px; 0);
+    padding: 40px 60px 0 90px;
+  }
+
+  .photoset__photo {
+    margin-top: 16px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .photoset__icons {
+    width: 55px;
+    padding: 10px 0 60px 51px;
+  }
+
+  .photoset__contrast {
+    width: 32px;
+    height: 32px;
+    margin-top: -2px;
+  }
+
+  .photoset__crop {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .photoset__fill {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .photopset__list {
+    width: 290px;
+    padding: 20px 6px 0 0;
+    margin-left: -2px;
+  }
+
+  .photopset__item {
+    width: 290px;
+  }
+
+  .photoset__crop-input {
+    width: 290px;
+    margin-bottom: 72px;
+  }
+
+  .photoset__fill-input {
+    width: 290px;
+    margin-bottom: 67px;
+  }
+
+  .photoset__contrast-input {
+    width: 280px;
+  }
+
+  .photoset__button-wrapper {
+    flex-direction: row;
+    width: 410px;
+    padding: 6px 0  4px;
+    margin: -67px 0 80px 392px;
+  }
+
+  .photoset__button-post {
+    width: 185px;
+    margin: 0 45px 0 0;
+  }
+
+  .photoset__button-cancelation {
+    width: 185px;
+  }
 }

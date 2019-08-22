@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -17,18 +18,18 @@
     <div class="page-header__inner">
       <div class="button-list button-list--closed page-header__button-list">
         <a class="button-list__logo" href="index.html">
-          <svg class="button-list__logo-image button-list__logo-image--ismobile" width="74.426px" height="22.859px">
+          <svg class="button-list__logo-image button-list__logo-image--ismobile" width="74" height="22">
             <use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
-          <svg class="button-list__logo-image button-list__logo-image--istablet" width="146.3px" height="40.375px">
+          <svg class="button-list__logo-image button-list__logo-image--istablet" width="146" height="40">
             <use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
-          <svg class="button-list__logo-image button-list__logo-image--isdesktop" width="146.3px" height="40.375px">
+          <svg class="button-list__logo-image button-list__logo-image--isdesktop" width="146" height="40">
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
         <button class="button-list__toggle button-list__toggle--nojs">
-          <svg class="button-list__toggle-open--opened button-list__toggle-open" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"
+          <svg class="button-list__toggle-open--opened button-list__toggle-open" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007"
             enable-background="new 0 0 49.945 24.007" xml:space="preserve">
             <g id="miu">
               <g id="editor_list_view_hambuger_menu_glyph">
@@ -43,7 +44,7 @@
               </g>
             </g>
           </svg>
-          <svg class="button-list__toggle-close--closed button-list__toggle-close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867"
+          <svg class="button-list__toggle-close--closed button-list__toggle-close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867"
             xml:space="preserve">
             <path fill=""
               d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
@@ -82,6 +83,9 @@
         <li class="photo-list__item photo-list__item--panorama">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Панорама">
@@ -95,7 +99,7 @@
             трансляцию в перископе, задавайте свои вопросы!
           </p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -108,6 +112,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Машина">
@@ -120,7 +127,7 @@
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -133,6 +140,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны">
@@ -143,7 +153,7 @@
           </p>
           <p class="photo-list__item-paragraph">Соседи будут рады.</p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -156,6 +166,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Окно">
@@ -168,7 +181,7 @@
             Здесь могла быть ваша цитата о высоком и вечном.
           </p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -181,6 +194,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Ярмарка">
@@ -191,7 +207,7 @@
           </p>
           <p class="photo-list__item-paragraph">Самая кубанская в мире!</p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -204,6 +220,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Горы">
@@ -214,7 +233,7 @@
           </p>
           <p class="photo-list__item-paragraph">Где снег-то?</p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -227,6 +246,9 @@
         <li class="photo-list__item">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло">
@@ -237,7 +259,7 @@
           </p>
           <p class="photo-list__item-paragraph">Всем GM и взаимные лайки!</p>
           <span class="photo-list__item-like">
-            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+            <svg class="photo-list__item-heart" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
               xml:space="preserve">
               <g>
                 <path fill="#D22856"
@@ -253,52 +275,66 @@
       <p class="page-main__paragraph-item">Затмите их всех!</p>
       <p class="page-main__paragraph-item">Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <section class=" photoset page-main__photoset">
+    <section class="photoset page-main__photoset">
       <h2 class="visually-hidden">Настройте ваши фото</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="photoset__form" action="https://echo.htmlacademy.ru" method="post">
         <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop.webp 1x, img/photo-road-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet.webp 1x, img/photo-road-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-road-mobile.webp 1x, img/photo-road-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
           <img class="photoset__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Зимняя дорога">
         </picture>
-        <button class="photoset__button-post" type="submit" name="button">Запостить</button>
+        <div class="photoset__icons">
+          <svg class="photoset__crop" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+            <path fill="none" d="M0,0h48v48H0V0z" />
+            <path fill="" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+          </svg>
+          <svg class="photoset__fill" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+            <path fill="none" d="M0,0h48v48H0V0z" />
+            <path fill=""
+              d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+            <rect y="40" width="48" height="3" />
+          </svg>
+          <svg class="photoset__contrast" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32" height="32" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+            <path fill=""
+              d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+            <path fill="" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+          </svg>
+        </div>
+        <ul class="photopset__list">
+          <li class="photoset__item">
+            <input class="photoset__crop-input" type="range" min="0" max="100" step="1" value="75">
+          </li>
+          <li class="photoset__item">
+            <input class="photoset__fill-input" type="range" min="0" max="100" step="1" value="20">
+          </li>
+          <li class="photoset__item">
+            <input class="photoset__contrast-input" type="range" min="0" max="100" step="1" value="50">
+          </li>
+        </ul>
+        <div class="photoset__button-wrapper">
+          <button class="photoset__button-post" type="submit" name="button">Запостить</button>
+          <button class="photoset__button-cancelation" type="button" name="button">Отмена</button>
+        </div>
       </form>
-        <svg class="photoset__crop" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-          <path fill="none" d="M0,0h48v48H0V0z"/>
-          <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-        </svg>
-        <input class="photoset__crop-input" type="range" min="0" max="100" step="1" value="50">
-        <svg class="photoset__fill" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-          <path fill="none" d="M0,0h48v48H0V0z"/>
-          <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-          <rect y="40" width="48" height="3"/>
-        </svg>
-        <input class="photoset__fill-input" type="range" min="0" max="100" step="1" value="50">
-        <svg class="photoset__contrast" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-          <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-          <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-        </svg>
-        <input class="photoset__contrast-input" type="range" min="0" max="100" step="1" value="50">
-        <button class="photoset__button-cancelation" type="button" name="button">Отмена</button>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__inner">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo-image page-footer__logo-image--ismobile" width="146.3px" height="40.375px">
+        <svg class="page-footer__logo-image page-footer__logo-image--ismobile" width="146" height="40">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="page-footer__logo-image page-footer__logo-image--isdesktop" width="146.3px" height="40.375px">
+        <svg class="page-footer__logo-image page-footer__logo-image--isdesktop" width="146" height="40">
           <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--twitter" href="https://www.twitter.com/htmlacademy">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="15" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
                 <g>
                   <path fill="#D22856" clip-rule="evenodd"
@@ -310,7 +346,7 @@
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path fill="#D22856"
                 d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
             </svg>
@@ -318,7 +354,7 @@
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com/htmlacademy">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15" height="14" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#D22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
             </svg>
           </a>
@@ -327,7 +363,7 @@
       <div class="page-footer__copyright">
         <b class="page-footer__copyright-text">Разработано:</b>
         <a class="page-footer__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__copyright-image" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg class="page-footer__copyright-image" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path fill=""
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
           </svg>

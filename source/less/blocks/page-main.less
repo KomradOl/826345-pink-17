@@ -59,8 +59,37 @@
   padding: 33px 0;
 }
 
+.page-main__post-item {
+  &--isdesktop {
+    display: none;
+  }
+}
+
 .page-main__post-items {
   display: none;
+}
+
+.page-main__paragraph-list {
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-white;
+  padding: 20px 0 40px;
+}
+
+.page-main__paragraph-item {
+  .inner(320px; 0);
+  .fonts(400; 14px; 30px);
+  color: @bg-darkgrey;
+  text-align: center;
+  padding: 0;
+
+  &:nth-child(1) {
+    width: 140px;
+  }
+
+  &:nth-child(2) {
+    width: 280px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -112,7 +141,24 @@
     display: flex;
     .fonts(400; 18px; 30px);
     color: @bg-darkgrey;
-    padding: 1px 0 80px 81px;
+    padding: 1px 0 81px 81px;
+  }
+
+  .page-main__paragraph-list {
+    padding: 46px 0 70px;
+  }
+
+  .page-main__paragraph-item {
+    .inner(620px; 0);
+    font-size: 18px;
+
+    &:nth-child(1) {
+      width: 150px;
+    }
+
+    &:nth-child(2) {
+      width: 425px;
+    }
   }
 }
 
@@ -147,6 +193,10 @@
     margin-top: -9px;
     margin-left: -90px;
     background-color: @bg-white;
+
+    &--form {
+      margin-top: 0;
+    }
   }
 
   .page-main__title {
@@ -168,26 +218,41 @@
   }
 
   .page-main__post {
-    width: 760px;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    padding: 73px 0 0 40px;
+    .inner(760px; 0);
+    margin-top: 10px;
+    padding: 65px 0 100px 90px;
   }
 
   .page-main__post-item {
-    width: 780px;
+    display: none;
 
-    &:first-child {
-      justify-content: flex-start;
+    &--isdesktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      margin-right: 60px;
+    }
+  }
+
+  .page-main__post-items {
+    display: none;
+  }
+
+  .page-main__paragraph-list {
+    padding: 4px 0 65px;
+  }
+
+  .page-main__paragraph-item {
+    .inner(620px; 0);
+    font-size: 18px;
+
+    &:nth-child(1) {
+      width: 150px;
     }
 
-    &:last-child {
-      justify-content: flex-end;
-      text-align: right;
+    &:nth-child(2) {
+      width: 425px;
     }
   }
 }

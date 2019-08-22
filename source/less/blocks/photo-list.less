@@ -18,10 +18,13 @@
   background-color: @bg-lightgrey;
 
   &--panorama {
+    padding-bottom: 18px;
     position: relative;
 
     .photo-list__image {
       position: absolute;
+      width: 320px;
+      height: 137px;
       max-width: none;
       left: 50%;
       transform: translateX(-50%);
@@ -242,23 +245,26 @@
 
     &--panorama {
       width: 940px;
-      margin: 0 0 50px -10px;
+      margin: 0 0 50px 0;
       min-height: 600px;
 
       .photo-list__image {
         width: 1200px;
         height: 505px;
+        max-width: none;
+        left: -10%;
+        transform: translateX(-3%);
       }
 
       .photo-list__item-name {
         margin-top: 510px;
 
         &::after {
-          left: 773px;
+          left: 769px;
         }
 
         &::before {
-          left: 792px;
+          left: 787px;
         }
       }
 
